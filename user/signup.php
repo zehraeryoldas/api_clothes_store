@@ -11,7 +11,7 @@ $userPassword = md5($_POST['user_password']);
 
 //sorgumuzu yapalım artık
 
-$sqlQuery = "INSERT INTO users_table SET user_name='$userName',user_password='$userEmail',user_email='$userPassword'";
+$sqlQuery = "INSERT INTO users_table SET user_name='$userName',user_email='$userEmail',user_password='$userPassword'";
 
 $resultOfQuery = $connectNow->query($sqlQuery);
 //sorgu başarılı mi diye kontrol yapacağız
