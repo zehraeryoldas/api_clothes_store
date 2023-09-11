@@ -12,3 +12,7 @@ else{
     //a user will allowed to signup succesfully
     echo json_encode(array("emailFound"=>false));
 }
+
+
+//  01   |    John      |   john@gmail.com   |   WIOQEUSABHDAS
+//  02   |  John Parker |   john22@gmail.com   |  eqweqWIOQEUSABHDAS
