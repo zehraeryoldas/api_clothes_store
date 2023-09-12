@@ -17,7 +17,7 @@ $resultOfQuery = $connectNow->query($sqlQuery);
 //Eğer sorgu sonucunda dönen satır sayısı 0'dan büyükse (yani bir kullanıcının eşleştiği kayıt bulunduysa), bu şart sağlanır.
 // Bu, kullanıcının giriş yapabileceği anlamına gelir.
 if ($resultOfQuery->num_rows > 0) {
-    $userRecord = array();
+    $userRecord[] = array();
     // fetch_assoc() yöntemi kullanılarak sorgu sonucunda dönen veriler satır satır alınır ve bir diziye ($userRecord) atanır. 
     while ($rowFound = $resultOfQuery->fetch_assoc()) {
         $userRecord = $rowFound;
