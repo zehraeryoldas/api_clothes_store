@@ -2,6 +2,7 @@
 
 include '../connection.php';
 
+//aynı emailden var mı yok mu kontrollerini yapacağız burada
 $userEmail = $_POST['user_email'];
 
 $sqlQuery = "SELECT * FROM users_table WHERE user_email='$userEmail'";
