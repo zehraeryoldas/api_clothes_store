@@ -11,7 +11,7 @@ $itemPrice= $_POST['price'];
 $itemSizes = $_POST['sizes'];
 $itemColors = $_POST['colors'];
 $itemDescription = $_POST['description'];
-$itemImage = md5($_POST['image']); 
+$itemImage = $_POST['image']; 
 
 
 //sorgumuzu yazıyoruz
