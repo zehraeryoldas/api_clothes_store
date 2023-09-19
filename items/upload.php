@@ -1,21 +1,16 @@
 <?php
 include '../connection.php';
 
-//POST = send/save data to mysql db
-//GET = retrieve/read data from mysql db
-
 $itemName = $_POST['name'];
-$itemRating = $_POST['rating'];
+$itemRating = $_POST['rating']; 
 $itemTags = $_POST['tags'];
-$itemPrice= $_POST['price'];
+$itemPrice = $_POST['price'];
 $itemSizes = $_POST['sizes'];
 $itemColors = $_POST['colors'];
 $itemDescription = $_POST['description'];
-$itemImage = $_POST['image']; 
+$itemImage = $_POST['image'];
 
-
-//sorgumuzu yazıyoruz
-$sqlQuery = "INSERT INTO items_table SET name = '$itemName', rating = '$userEmail', tags = '$itemTags',price= '$itemPrice,sizes= '$itemSizes,colors= '$itemColors,description= '$itemDescription,image= '$itemImage";
+$sqlQuery = "INSERT INTO items_table SET name='$itemName', rating='$itemRating', tags='$itemTags', price='$itemPrice', sizes='$itemSizes', colors='$itemColors', description='$itemDescription', image='$itemImage'";
 
 $resultOfQuery = $connectNow->query($sqlQuery);
 
@@ -27,4 +22,3 @@ else
 {
     echo json_encode(array("success"=>false));
 }
-
