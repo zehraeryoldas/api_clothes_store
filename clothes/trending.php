@@ -5,7 +5,7 @@ include '../connection.php';
 $minRating = 3;
 $limitClothItems = 5;
 
-$sqlQuery = "Select * FROM items_table WHERE rating>= '$minRating' ORDER BY rating DESC LIMIT $limitClothItems";
+$sqlQuery = "SELECT * FROM items_table WHERE rating>= '$minRating' ORDER BY rating DESC LIMIT $limitClothItems";
 //5 or less than 5 newly available top rated clothes item
 //not greater than 5
 
