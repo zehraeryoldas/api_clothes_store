@@ -1,5 +1,3 @@
-//aynı ürün aynı kişi tarafından bir daha beğnilmiş mi beğenilmemiş mi?
-
 <?php
 include '../connection.php';
 $userID=$_POST['user_id'];
