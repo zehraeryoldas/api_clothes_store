@@ -12,7 +12,7 @@ if($resultOfQuery->num_rows>0){
     while($rowFound=$resultOfQuery->fetch_assoc()){
 $foundItemsRecord[]=$rowFound;
     }
-    echo json_encode(array("success"=>true,"itemFoundData"=>$foundItemsRecord));
+    echo json_encode(array("success"=>true,"itemsFoundData"=>$foundItemsRecord));
 }
 else{
     echo json_encode(array("success"=>false));
