@@ -1,7 +1,7 @@
 <?php
 include '../connection.php';
 
-//verdiğim siparişi veritabanına kaydediyorum
+
 $userID = $_POST["user_id"];
 $selectedItems = $_POST["selectedItems"];
 $deliverySystem = $_POST["deliverySystem"];
@@ -23,7 +23,7 @@ if($resultOfQuery)
 {
     //upload image to server
     $imageFileOfTransactionProof = base64_decode($imageFileBase64);
-    file_put_contents("order/transactions_proof_images/".$image, $imageFileOfTransactionProof);
+    file_put_contents(".../transactions_proof_images/".$image, $imageFileOfTransactionProof);
 
     echo json_encode(array("success"=>true));
 }
